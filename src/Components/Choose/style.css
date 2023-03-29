@@ -1,0 +1,72 @@
+.choose {
+    padding: 25px 0;
+}
+.choose .container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+    .choose .container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .choose .choose {
+        width: 100%;
+    }
+}
+.choose .choose-head,
+.popular .pop-head {
+    background: #772727;
+    color: #fff;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.choose ul li {
+    list-style: none;
+}
+.choose .choose ul li .icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose ul .info {
+    display: flex;
+    align-items: center;
+}
+.choose ul li .icon svg {
+    font-size: 14px;
+}
+.choose ul .info h5 {
+    font-size: 13px;
+}
+.choose ul p {
+    font-size: 13px;
+}
+@media screen and (max-width: 1200px) {
+    .choose .popular {
+        width: 100%;
+    }
+}
+.popular ul li {
+    display: flex;
+    margin: 18px 0;
+}
+.popular ul li img {
+    width: 150px;
+}
+.popular ul li h5 {
+    width: 450px;
+    font-size: 16px
+}
+@media screen and (max-width: 1200px) {
+    .choose .popular h5 {
+        width: 100%;
+    }
+}

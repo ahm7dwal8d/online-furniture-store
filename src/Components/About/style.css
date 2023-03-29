@@ -1,0 +1,127 @@
+.about {
+    padding: 25px 0;
+}
+.about .about-head {
+    background-color: #772727;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.about .about-top,
+.about .about-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+@media screen and (max-width: 991px ) {
+    .about .about-top,
+    .about .about-bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.about .about-top p {
+    color: #b7b7b7;
+    width: 400px;
+    line-height: 1.6;
+}
+@media screen and (max-width: 767px) {
+    .about .about-top p {
+        width: 100%;
+    }
+}
+.about .about-top button {
+    background-color: #772727;
+    border-color: #772727;
+    padding: 10px;
+    width: 120px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.about .about-top .img {
+    display: flex;
+}
+.about .about-top img {
+    width: 300px;
+    border-radius: 4px;
+}
+@media screen and (max-width: 676px) {
+    .about .about-top img {
+        width: 50%;
+        margin: 10px 0 0;
+    }
+}
+.about .about-bottom .video {
+    position: relative;
+}
+.about .about-bottom .video .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;   
+}
+.about .about-bottom .video .icon.active {
+    display: none
+}
+.about .about-bottom .video .icon svg {
+    font-size: 27px;
+}
+.about .about-bottom video {
+    width: 94%;
+    height: 100%;
+}
+.about .about-bottom .info {
+    flex: 1;
+}
+.about .about-bottom .info p {
+    color: #b7b7b7;
+    width: 500px;
+    line-height: 1.6;
+}
+.about .about-bottom .info h5 {
+    color: #6d6a6a;
+}
+@media screen and (max-width: 530px) {
+    .about .about-bottom .info p {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .about .about-bottom video {
+        width: 100%;
+    }
+}
+.about .about-bottom .box {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+.about .about-bottom .box svg {
+    margin-right: 20px;
+    font-size: 30px;
+    color: #772727;
+}
+.team .box h5 {
+    color: #772727;
+}
+.team .box h6 {
+    color: #6d6a6a;
+}
+.team .box p {
+    color: #6d6a6a;
+}
+.team .box svg {
+    color: #772727;
+}

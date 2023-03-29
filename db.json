@@ -1,0 +1,406 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "images": "/images/Products/Bed/bed-1.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 16.24, "price": 12.42}
+        },
+        {
+            "id": 2,
+            "images": "/images/Products/Table-Lamp/table-lamp-1.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 20.40, "price": 15.24}
+        },
+        {
+            "id": 3,
+            "images": "/images/Products/Chair/chair-1.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 10.80, "price": 8.89}
+        },
+        {
+            "id": 4,
+            "images": "/images/Products/Table/table-1.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.89, "price": 13.80}
+        },
+        {
+            "id": 5,
+            "images": "/images/Products/Chair/chair-2.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 12.80, "price": 10.89}
+        },
+        {
+            "id": 6,
+            "images": "/images/Products/Table/table-2.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 10.89, "price": 8.80}
+        },
+        {
+            "id": 7,
+            "images": "/images/Products/Table-Lamp/table-lamp-2.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!   ",
+            "prices": {"del": 25.40, "price": 18.24}
+        },
+        {
+            "id": 8,
+            "images": "/images/Products/Bed/bed-2.jpg",
+            "head":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 20.24, "price": 15.42}
+        },
+        {
+            "id": 9,
+            "images": "/images/Products/Table-Lamp/table-lamp-3.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 16.24, "price": 12.42}
+        },
+        {
+            "id": 10,
+            "images": "/images/Products/Bed/bed-3.jpg",
+            "head":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 25.40, "price": 18.24}
+        },
+        {
+            "id": 11,
+            "images": "/images/Products/Table/table-3.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.80, "price": 9.89}
+        },
+        {
+            "id": 12,
+            "images": "/images/Products/Chair/chair-3.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 12.89, "price": 8.80}
+        },
+        {
+            "id": 13,
+            "images": "/images/Products/Table/table-4.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.80, "price": 10.89}
+        },
+        {
+            "id": 14,
+            "images": "/images/Products/Chair/chair-4.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 11.89, "price": 7.80}
+        },
+        {
+            "id": 15,
+            "images": "/images/Products/Table-Lamp/table-lamp-4.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 21.40, "price": 17.24}
+        },
+        {
+            "id": 16,
+            "images": "/images/Products/Bed/bed-4.jpg",
+            "head":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.24, "price": 10.42}
+        },
+        {
+            "id": 17,
+            "images": "/images/Products/Table-Lamp/table-lamp-5.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 16.24, "price": 12.42}
+        },
+        {
+            "id": 18,
+            "images": "/images/Products/Bed/bed-5.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 25.40, "price": 18.24}
+        },
+        {
+            "id": 19,
+            "images": "/images/Products/Table/table-5.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.80, "price": 9.89}
+        },
+        {
+            "id": 20,
+            "images": "/images/Products/Chair/chair-5.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 12.89, "price": 8.80}
+        },
+        {
+            "id": 21,
+            "images": "/images/Products/Table/table-6.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.80, "price": 10.89}
+        },
+        {
+            "id": 22,
+            "images": "/images/Products/Chair/chair-6.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 11.89, "price": 7.80}
+                },
+        {
+            "id": 23,
+            "images": "/images/Products/Table-Lamp/table-lamp-6.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 21.40, "price": 17.24}
+        },
+        {
+            "id": 24,
+            "images": "/images/Products/Bed/bed-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.24, "price": 10.42}
+        },
+        {
+            "id": 25,
+            "images": "/images/Products/Table-Lamp/table-lamp-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 16.24, "price": 12.42}
+        },
+        {
+            "id": 26,
+            "images": "/images/Products/Bed/bed-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 25.40, "price": 18.24}
+        },
+        {
+            "id": 27,
+            "images": "/images/Products/Table/table-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.80, "price": 9.89}
+        },
+        {
+            "id": 28,
+            "images": "/images/Products/Chair/chair-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 12.89, "price": 8.80}
+        },
+        {
+            "id": 29,
+            "images": "/images/Products/Table/table-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 15.80, "price": 10.89}
+        },
+        {
+            "id": 30,
+            "images": "/images/Products/Chair/chair-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "prices": {"del": 11.89, "price": 7.80}
+        }
+    ],
+    "cagegory": ["sofas (6)", "stotorage (5)", "living-room (6)", "variables (9)", "kitchen & dining (15)", "home office (12)", "design collections (14)", "coffee table (13)", "study table (14)", "bedroom (16)", "gifting (15)", "furnishings (2)", "kids room (10)", "decor (4)", "fooring (7)", "home garden (13)", "cabinetry (14)"],
+    "featured-product": [
+                {
+                    "id": 1,
+                    "images": "/images/Products/Table-Lamp/table-lamp-12.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 18.5
+                },
+                {
+                    "id": 2,
+                    "images": "/images/Products/Table-Lamp/table-lamp-13.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 17.2
+                },
+                {
+                    "id": 3,
+                    "images": "/images/Products/Table/table-12.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 16.3
+                },
+                {
+                    "id": 4,
+                    "images": "/images/Products/Chair/chair-12.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 15.20
+                },
+                {
+                    "id": 5,
+                    "images": "/images/Products/Table/table-12.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 20.80
+                },
+                {
+                    "id": 6,
+                    "images": "/images/Products/Chair/chair-13.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 13.8
+                },
+                {
+                    "id": 7,
+                    "images": "/images/Products/Table-Lamp/table-lamp-13.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 25.80
+                },
+                {
+                    "id": 8,
+                    "images": "/images/Products/Chair/chair-13.jpg",
+                    "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+                    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+                    "prices": 23.82
+                }
+            ],
+            "choose": {
+                "choose": [
+                    {
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+                        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit."
+                    },
+                    {
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+                        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit."
+                    },
+                    {
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+                        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit."
+                    },
+                    {
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+                        "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit."
+                    }
+                ],
+                "popular": [
+                    {
+                        "image": "/images/Popular/pop-1.jpg",
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum deserunt voluptatem cupiditate a explicabo neque! Voluptate facere accusantium dignissimos."
+                    },
+                    {
+                        "image": "/images/Popular/pop-2.jpg",
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum deserunt voluptatem cupiditate a explicabo neque! Voluptate facere accusantium dignissimos."
+                    },
+                    {
+                        "image": "/images/Popular/pop-3.jpg",
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum deserunt voluptatem cupiditate a explicabo neque! Voluptate facere accusantium dignissimos."
+                    },
+                    {
+                        "image": "/images/Popular/pop-4.jpg",
+                        "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum deserunt voluptatem cupiditate a explicabo neque! Voluptate facere accusantium dignissimos."
+                    }
+                ]
+            },
+    "collection-product": [
+        {
+            "id": 1,
+            "images": "/images/Products/Table-Lamp/table-lamp-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+            "prices": 12.42
+        },
+        {
+            "id": 2,
+            "images": "/images/Products/Bed/bed-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+            "prices": 18.90
+        },
+        {
+            "id": 3,
+            "images": "/images/Products/Table/table-7.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+            "prices": 25.80
+        },
+        {
+            "id": 4,
+            "images": "/images/Products/Chair/chair-8.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+            "prices": 10.50
+        },
+        {
+            "id": 5,
+            "images": "/images/Products/Table/table-8.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+            "prices": 25.90
+        },
+        {
+            "id": 6,
+            "images": "/images/Products/Chair/chair-4.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nisi sed, debitis ea odit suscipit.",
+            "prices": 22.40
+        },
+        {
+            "id": 7,
+            "images": "/images/Products/Table-Lamp/table-lamp-3.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est praesentium autem velit earum laudantium, incidunt facilis voluptates consequuntur unde molestiae asperiores! Ullam, nobis debitis.",
+            "prices": 20.30
+        },
+        {
+            "id": 8,
+            "images": "/images/Products/Bed/bed-4.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est praesentium autem velit earum laudantium, incidunt facilis voluptates consequuntur unde molestiae asperiores! Ullam, nobis debitis.",
+            "prices": 21.5
+        },
+        {
+            "id": 9,
+            "images": "/images/Products/Chair/chair-9.jpg",
+            "head": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ipsa!",
+            "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est praesentium autem velit earum laudantium, incidunt facilis voluptates consequuntur unde molestiae asperiores! Ullam, nobis debitis.",
+            "prices": 10.50
+        }
+    ],
+    "testimolis": [
+        {
+            "id": 1,
+            "image": "/images/Person/person-1.jpg",
+            "body":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est praesentium autem velit earum laudantium, incidunt facilis voluptates consequuntur unde molestiae asperiores! Ullam, nobis debitis.",
+            "head": "donald doe",
+            "date": "jun07, 2020"
+        },
+        {
+            "id": 2,
+            "image": "/images/Person/person-2.jpg",
+            "body":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est praesentium autem velit earum laudantium, incidunt facilis voluptates consequuntur unde molestiae asperiores! Ullam, nobis debitis.",
+            "head": "jon doe",
+            "date": "mar09, 2021"
+        },
+        {
+            "id": 3,
+            "image": "/images/Person/person-3.jpg",
+            "body":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est praesentium autem velit earum laudantium, incidunt facilis voluptates consequuntur unde molestiae asperiores! Ullam, nobis debitis.",
+            "head": "ronald",
+            "date": "fri08, 2019"
+        },
+        {
+            "id": 4,
+            "image": "/images/Person/person-4.jpg",
+            "body":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni est praesentium autem velit earum laudantium, incidunt facilis voluptates consequuntur unde molestiae asperiores! Ullam, nobis debitis.",
+            "head": "donald doe",
+            "date": "jun01, 2023"
+        }
+    ],
+    "team": {
+        "top": [
+        {
+            "id": 1,
+            "name": "sam pullman",
+            "job": "lorem ipsum",
+            "image": "/images/Person/person-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "amanda hempel",
+            "job": "lorem ipsum",
+            "image": "/images/Person/person-2.jpg"
+        }
+    ],
+    "bottom": [
+        {
+            "id": 1,
+            "name": "sam pullman",
+            "job": "lorem ipsum",
+            "image": "/images/Person/person-3.jpg"
+        },
+        {
+            "id": 2,
+            "name": "amanda hempel",
+            "job": "lorem ipsum",
+            "image": "/images/Person/person-4.jpg"
+        }
+    ]
+    }
+}
