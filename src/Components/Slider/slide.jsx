@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Button from "../Button"
 import "./style.css";
 
@@ -16,4 +17,4 @@ function Slide() {
     )
 }
 
-export default Slide;
+export default memo(Slide);

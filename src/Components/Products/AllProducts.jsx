@@ -6,13 +6,11 @@ import Product from "./Product";
 
 function AllProducts() {
     const [state, setState] = useState([])
-    const [num, setNum] = useState(1);
     useEffect(() => {
-        axios.get("http://localhost:3000/products").then((res) => {
-            setState(res.data)
+        axios.get("https://dummyjson.com/products").then((res) => {
+            setState(res.data.products)
         })
     }, [])
-    console.log(state)
     return (
         <div className="product mt-5 mb-5">
             <div className="container">

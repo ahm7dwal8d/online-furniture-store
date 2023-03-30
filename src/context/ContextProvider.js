@@ -7,10 +7,17 @@ function ContextProvider({ children }) {
     const addToCart = (item) => {
         setProduct([...Product, item])
     }
+    const removeFromCart = (ids) => {
+        const cart = Product.filter((item) => {
+            return item.id !== ids
+        })
+        setProduct(cart)
+    }
     return (    
         <AppContext.Provider value={{
             Product,
-            addToCart
+            addToCart,
+            removeFromCart
         }} >
             {children}
         </AppContext.Provider>

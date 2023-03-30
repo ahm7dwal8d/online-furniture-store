@@ -56,7 +56,7 @@ function Products() {
                         <div className="row">
                         {product.map((item) => {
                             return (
-                                <div className="product col-lg-4 col-md-6 col-sm-12 mt-4" key={item.id}>
+                                <div className="product col-lg-3 col-md-6 col-sm-12 mt-4" key={item.id}>
                                     <div className="img">
                                         <img 
                                             className='w-75'

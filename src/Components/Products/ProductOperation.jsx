@@ -4,13 +4,12 @@ import { useContext } from "react";
 import { AppContext } from "../../context/createContext";
 
 function ProductBtn(props) {
-    const { addToCart, product } = useContext(AppContext);
-    console.log(product)
-    const { item } = props;
+    const { addToCart } = useContext(AppContext);
     const style = {
         backgroundColor: "#772727",
         borderColor: "#772727"
     }
+    const { item } = props;
     return (
         <div className="product-footer d-flex justify-content-between align-items-center">
             <div className="info d-flex align-items-center">
@@ -23,9 +22,9 @@ function ProductBtn(props) {
                 </p>
             </div>
             <button
-            className="w-25 rounded text-capitalize text-white"
+                className="w-25 rounded text-capitalize text-white"
                 style={style}
-            onClick={() => addToCart(item)}>
+                onClick={() => addToCart(item)}>
             buy</button>
         </div>
     )

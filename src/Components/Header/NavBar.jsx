@@ -1,10 +1,12 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useContext } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
+import { AppContext } from "../../context/createContext";
 
 function NavBar() {
-    const [state, setState] = useState(false)
+    const [state, setState] = useState(false);
+    const { Product } = useContext(AppContext);
     return (
         <div className="navbar">
             <div className="container">
@@ -15,22 +17,18 @@ function NavBar() {
                     <NavLink to='/Blog'>Blog</NavLink>
                     <NavLink to='/Contact'>Contact</NavLink>
                 </ul>
-                <form action="">
-                    <input
-                        type="search"
-                        placeholder="Looking For ...."
-                    />
-                    <button
-                        type="submit">
-                        <FontAwesomeIcon icon={faSearch} />
-                        </button>
-                </form>
                 <div
                     className="header-icon"
                     onClick={() => setState(!state)}>
                     <FontAwesomeIcon 
                     icon={faBars} />
                 </div>
+                <Link
+                    className="p-2 border rounded text-white text-capitalize fs-6 text-decoration-none"
+                    to='/CartPage'>
+                    <span className="text-primary">{Product.length}</span>
+                    <span> cart</span>
+                </Link>
             </div>
             {state && (
                 <div className="mobile-links">
