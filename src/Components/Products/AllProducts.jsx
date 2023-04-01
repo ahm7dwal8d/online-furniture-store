@@ -5,7 +5,7 @@ import Product from "./Product";
 
 
 function AllProducts() {
-    const [state, setState] = useState([])
+    const [state, setState] = useState([]);
     useEffect(() => {
         axios.get("https://dummyjson.com/products").then((res) => {
             setState(res.data.products)

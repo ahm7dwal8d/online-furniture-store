@@ -95,16 +95,13 @@
 }
 .product .container .add-to-cart {
     margin: 10px 5px;
-    width: 90%;
+    width: 100px;
     padding: 5px;
     border-radius: 4px;
     cursor: pointer;
     background-color: #772727;
     color: #fff;
-    border-color: #772727;
-    border-width: 1px;
-    text-transform: capitalize;
-    font-weight: bold;
+    border: 1px solid #772727;
 }
 .product .container .add-to-cart:hover {
     background-color: #fff;
@@ -275,4 +272,25 @@
 }
 .product-footer svg {
     color: #772727
+}
+.cart-btn {
+    background: #772727;
+}
+.cate {
+    position: absolute;
+    top: 6px;
+    left: 17px;
+    color: #fff;
+    background: #F44336;
+    padding: 3px;
+    border-radius: 4px;
+}
+.brand {
+    position: absolute;
+    top: 6px;
+    right: 17px;
+    color: #fff;
+    background: #F44336;
+    padding: 3px;
+    border-radius: 4px;
 }

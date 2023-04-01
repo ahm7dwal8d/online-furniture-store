@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AppContext } from "../../context/createContext";
 
 function Summry() {
@@ -10,14 +10,14 @@ function Summry() {
                 <li className="text-capitalize list-group-item d-flex justify-content-between align-items-center"><span>subtotal</span>
                     {Product.reduce((acc, current) => {
                     return acc + current.price
-                }, 0)}$
+                }, 0).toFixed(2)}$
                 </li>
                 <li className="text-capitalize list-group-item d-flex justify-content-between align-items-center">shopping cost <span>0$</span></li>
                 <li className="text-capitalize list-group-item d-flex justify-content-between align-items-center">discount <span>0$</span></li>
                 <li className="text-capitalize list-group-item d-flex justify-content-between align-items-center"><span>total</span>
                 {Product.reduce((acc, current) => {
                     return acc + current.price
-                }, 0)}$</li>
+                }, 0).toFixed(2)}$</li>
             </ul>
         </div>
     )

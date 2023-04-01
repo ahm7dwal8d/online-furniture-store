@@ -10,6 +10,7 @@ import CartPage from './Pages/Cart';
 import CopyRight from './Components/CopyRight/CopyRight';
 import ScrollButton from './Components/ScrollBtn';
 import NotFound from './Components/NotFound';
+import ProductDetails from './Components/ProductDetails';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' element={<Index />} />
           <Route path='About' element={<About />} />
           <Route path='Product' element={<Product />} />
+            <Route path='Product/:id' element={<ProductDetails />} />
           <Route path='CartPage' element={<CartPage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

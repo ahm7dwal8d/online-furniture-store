@@ -13,11 +13,15 @@ function ContextProvider({ children }) {
         })
         setProduct(cart)
     }
+    const checkOut = () => {
+        setProduct([])
+    }
     return (    
         <AppContext.Provider value={{
             Product,
             addToCart,
-            removeFromCart
+            removeFromCart,
+            checkOut
         }} >
             {children}
         </AppContext.Provider>

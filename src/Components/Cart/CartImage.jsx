@@ -1,9 +1,10 @@
 
 
 function CartImage(props) {
-    const { img } = props;
+    const { img, thumbnail } = props;
+    console.log(img, thumbnail)
     return (
-        <img src={img} className='w-25 rounded' alt='' />
+        <img src={img || thumbnail} className='w-25 rounded' alt='' />
     )
 }
 
