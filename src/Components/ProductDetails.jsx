@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { AppContext } from "../context/createContext";
 
 function ProductDetails() {
@@ -21,7 +21,7 @@ function ProductDetails() {
             {product !== null && (
                 <div className="product">
                     <img
-                        className="rounded w-50"
+                        className="rounded w-100"
                         src={img === null ? product.thumbnail : img }
                         alt="" />
                     <div className="img">
@@ -30,7 +30,7 @@ function ProductDetails() {
                                 return <img
                                     onClick={() => setImgs(img)}
                                     className="rounded mt-3"
-                                    style={{width: "150px"}}
+                                    style={{width: "70px"}}
                                     src={img}
                                     alt=''
                                     key={Math.random() * 4} />
@@ -46,6 +46,9 @@ function ProductDetails() {
                             className="btn btn-primary text-capitalize"
                         >addToCart</button>
                     </div>
+                    <Link
+                        to='/Product'
+                        className="text-capitalize">redirect to products page</Link>
                 </div>
             )}
         </div>

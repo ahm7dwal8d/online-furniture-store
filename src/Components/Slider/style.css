@@ -7,7 +7,7 @@
 .slider .slider-wrap .slider {
     height: 100%;
     display: flex;
-    transition: all 1.2s ease;
+    transition: all 1.5s ease;
 }
 .slider .slider-wrap .slide {
     position: relative;
@@ -18,7 +18,7 @@
 }
 @media screen and (max-width: 540px) {
     .slider .slider-wrap .slide {
-        width: 95vw
+        width: 100vw
     }
 }
 .slider .slider-wrap .slide::After {

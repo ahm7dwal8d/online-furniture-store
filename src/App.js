@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import Header from './Components/Header/Header';
@@ -11,10 +11,13 @@ import CopyRight from './Components/CopyRight/CopyRight';
 import ScrollButton from './Components/ScrollBtn';
 import NotFound from './Components/NotFound';
 import ProductDetails from './Components/ProductDetails';
+import { AppContext } from './context/createContext';
 
 function App() {
+  const { theme, light, dark } = useContext(AppContext);
+  console.log(light, dark)
   return (
-    <div className="App">
+    <div className={`App`} style={theme !== 'dark' ? light : dark}>
       <Router>
         <Header />
         <Routes>

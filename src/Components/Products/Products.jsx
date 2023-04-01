@@ -6,15 +6,11 @@ import "./style.css"
 import { AppContext } from "../../context/createContext";
 
 function Products() {
-    const [product, setProduct] = useState([]);
     const [state, setState] = useState(10);
     const [cateProduct, setCate] = useState([])
     useEffect(() => {
         axios.get("https://dummyjson.com/products").then((res) => {
             setCate(res.data.products)
-        })
-        axios.get(`http://localhost:3000/products?_limit=${state}`).then((res) => {
-            setProduct(res.data)
         })
     }, [])
     const { addToCart } = useContext(AppContext);
@@ -46,32 +42,28 @@ function Products() {
                     <div className="product-head">
                         <h5>new products</h5>
                         <div className="btn">
-                            {state !== 1 && (
                                 <div
                                     className="right-btn"
                                     onClick={() => setState(state - 1)}>
                                     <FontAwesomeIcon
                                         icon={faAngleLeft} />
                                 </div>
-                            )}
-                            {state < 6 && (
                             <div
                                 className="left-btn"
                                 onClick={() => setState(state + 1)}>
                                 <FontAwesomeIcon 
                                     icon={faAngleRight} />
                             </div>
-                            )}
                         </div>
                     </div>
                     <div className="products">
                         <div className="row">
                         {cateProduct.map((item) => {
                             return (
-                                <div className="product col-lg-3 col-md-6 col-sm-12 mt-4" key={item.id}>
+                                <div className="product col-lg-3 col-md-6 col-sm-12 mt-4 me-4" key={item.id}>
                                     <img
                                         src={item.thumbnail}
-                                        className='w-50'
+                                        className='w-100'
                                         alt="" />
                                     <h6 className="mt-2">{item.description}</h6>
                                     <span className="opacity-50 fs-6 d-block">{item.title}</span>

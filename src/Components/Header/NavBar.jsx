@@ -1,12 +1,12 @@
 import { useState, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon, faBars } from "@fortawesome/free-solid-svg-icons";
 import { AppContext } from "../../context/createContext";
 
 function NavBar() {
     const [state, setState] = useState(false);
-    const { Product } = useContext(AppContext);
+    const { switchTheme, theme, Product } = useContext(AppContext);
     return (
         <div className="navbar">
             <div className="container">
@@ -23,6 +23,11 @@ function NavBar() {
                     <FontAwesomeIcon 
                     icon={faBars} />
                 </div>
+                <button onClick={ switchTheme}>
+                    <FontAwesomeIcon
+                        style={{transition: '1s linear'}}
+                        icon={theme === 'light' ? faMoon : faSun} />
+                </button>
                 <Link
                     className="p-2 border rounded text-white text-capitalize fs-6 text-decoration-none"
                     to='/CartPage'>

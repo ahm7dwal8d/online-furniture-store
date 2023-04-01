@@ -31,7 +31,7 @@ function Product(props) {
                     icon={faTruckFast}
                     style={{ marginRight: "8px", fontSize: "25px" }} />
                 <p
-                                    className="m-0 text-capitalize"
+                    className="m-0 text-capitalize"
                 >ships in 4 days
                 </p>
                             </div>

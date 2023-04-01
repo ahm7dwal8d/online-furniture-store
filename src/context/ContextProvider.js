@@ -4,6 +4,7 @@ import { AppContext } from "./createContext";
 
 function ContextProvider({ children }) {
     const [Product, setProduct] = useState([]);
+    const [theme, setTheme] = useState('light');
     const addToCart = (item) => {
         setProduct([...Product, item])
     }
@@ -16,12 +17,27 @@ function ContextProvider({ children }) {
     const checkOut = () => {
         setProduct([])
     }
+    const switchTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light')
+    }
+    const light = {
+        bg: "#fff",
+        color: "#000"
+    }
+    const dark = {
+        bg: "#1A1A1A",
+        color: "#fff"
+    }
     return (    
         <AppContext.Provider value={{
             Product,
             addToCart,
             removeFromCart,
-            checkOut
+            checkOut,
+            theme,
+            switchTheme,
+            light,
+            dark
         }} >
             {children}
         </AppContext.Provider>

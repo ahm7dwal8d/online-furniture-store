@@ -25,7 +25,9 @@ function FeatureProduct() {
                         return (
                             <div className="feat-product" key={item.id}>
                                 <div className="img">
-                                    <img src={item.image } alt="" />
+                                    <img
+                                        className="w-100"
+                                        src={item.image} alt="" />
                                 </div>
                                 <h5>{item.title}</h5>
                                 <p>{item.body}</p>
