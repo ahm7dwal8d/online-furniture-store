@@ -6,10 +6,9 @@ import "./style.css"
 import { AppContext } from "../../context/createContext";
 
 function Products() {
-    const [state, setState] = useState(10);
     const [cateProduct, setCate] = useState([])
     useEffect(() => {
-        axios.get("https://dummyjson.com/products").then((res) => {
+        axios.get("https://dummyjson.com/products?limit=6").then((res) => {
             setCate(res.data.products)
         })
     }, [])
@@ -36,6 +35,7 @@ function Products() {
                         <li className="list-group">sofas (6)</li>
                         <li className="list-group">sofas (6)</li>
                         <li className="list-group">sofas (6)</li>
+                        <li className="list-group">sofas (6)</li>
                     </ul>
                 </div>
                 <div className="products-content  col-lg-8 col-md-12 col-sm-12">
@@ -43,14 +43,12 @@ function Products() {
                         <h5>new products</h5>
                         <div className="btn">
                                 <div
-                                    className="right-btn"
-                                    onClick={() => setState(state - 1)}>
+                                    className="right-btn">
                                     <FontAwesomeIcon
                                         icon={faAngleLeft} />
                                 </div>
                             <div
-                                className="left-btn"
-                                onClick={() => setState(state + 1)}>
+                                className="left-btn">
                                 <FontAwesomeIcon 
                                     icon={faAngleRight} />
                             </div>
@@ -60,10 +58,11 @@ function Products() {
                         <div className="row">
                         {cateProduct.map((item) => {
                             return (
-                                <div className="product col-lg-3 col-md-6 col-sm-12 mt-4 me-4" key={item.id}>
+                                <div className="product col-lg-4 col-md-6 col-sm-12" key={item.id}>
+                                    <div className="box mt-4">
                                     <img
                                         src={item.thumbnail}
-                                        className='w-100'
+                                        className='w-100 rounded'
                                         alt="" />
                                     <h6 className="mt-2">{item.description}</h6>
                                     <span className="opacity-50 fs-6 d-block">{item.title}</span>
@@ -76,6 +75,7 @@ function Products() {
                                             icon={faCartShopping} />
                                         addToCart
                                     </button>
+                                    </div>
                                 </div>
                             )
                         })}

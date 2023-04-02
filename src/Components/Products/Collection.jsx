@@ -48,7 +48,7 @@ function Collection() {
                         return (
                             <div className="collection-product" key={item.id}>
                                 <img className="w-100" src={item.image} alt="" />
-                                <h5>{item.price}$</h5>
+                                <h5 className="mt-3">{item.price}$</h5>
                                 <h5>{item.title}</h5>
                                 <span>{item.category}   </span>
                                 <p>{item.description}</p>

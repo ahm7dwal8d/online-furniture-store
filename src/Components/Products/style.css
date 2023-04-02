@@ -68,20 +68,6 @@
     margin: 0 5px;
     cursor: pointer;
 }
-.product .container .product-head .right-btn {
-
-}
-.product .container .product-head .left-btn {
-
-}
-.product .container .products {
-
-}
-.product .container .products .product {
-    border: 1px solid #b7b7b7;
-    border-radius: 4px;
-    padding: 10px
-}
 
 .product .container .info {
     margin: 0 5px;
@@ -109,7 +95,8 @@
     transition: all 0.4s linear;
 }
 .feature {
-    margin: 25px 0;
+    padding: 25px 0;
+    background-color: #e8e4e4;
 }
 .feature .container .head,
 .collection .collection-head {
@@ -122,7 +109,7 @@
     padding: 10px;
 }
 .feature .container .feature-content {
-    background-color: #e8e4e4;
+
 }
 .feature .container .feature-content {
     width: 100%;

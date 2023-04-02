@@ -16,6 +16,7 @@ function ProductDetails() {
         setImg(imgs)
     }
     const { addToCart } = useContext(AppContext);
+    console.log(product)
     return (
         <div className="container pt-5 pb-5">
             {product !== null && (
@@ -39,7 +40,8 @@ function ProductDetails() {
                         <div className="info mt-3">
                             <h5>{product.title}</h5>
                             <h6 className="opacity-50">{product.category} &  {product.brand}</h6>
-                            <p>{product.description}</p>
+                            <p className="mb-1">{product.description}</p>
+                            <h6 className="mb-3 mt-1">{product.price}$</h6>
                         </div>
                         <button
                             onClick={() => addToCart(product)}
