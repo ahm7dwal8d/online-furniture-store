@@ -23,7 +23,10 @@ function NavBar() {
                     <FontAwesomeIcon 
                     icon={faBars} />
                 </div>
-                <button onClick={ switchTheme}>
+                <div className="section">
+                    <button
+                        className="me-2 border-0 bg-transparent text-white"
+                        onClick={switchTheme}>
                     <FontAwesomeIcon
                         style={{transition: '1s linear'}}
                         icon={theme === 'light' ? faMoon : faSun} />
@@ -34,6 +37,7 @@ function NavBar() {
                     <span className="text-primary">{Product.length}</span>
                     <span> cart</span>
                 </Link>
+                </div>
             </div>
             {state && (
                 <div className="mobile-links">

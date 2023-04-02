@@ -14,10 +14,6 @@ import CartOepartion from "./CartOperation"
 
 function Cart() {
     const { Product, removeFromCart } = useContext(AppContext);
-    const style = {
-        cursor: "pointer"
-    }
-    console.log(Product)
     return (
         <div className="container pb-3 ">
             <div className="row">
@@ -42,7 +38,7 @@ function Cart() {
                             onClick={() => removeFromCart(item.id)}>
                             <FontAwesomeIcon
                                 className="text-danger"
-                                style={style}
+                                style={{cursor: "pointer"}}
                                 icon={faTrash} />
                         </div>
                     </div>

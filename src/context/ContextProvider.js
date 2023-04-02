@@ -20,13 +20,15 @@ function ContextProvider({ children }) {
     const switchTheme = () => {
         setTheme(theme === 'light' ? 'dark' : 'light')
     }
-    const light = {
-        bg: "#fff",
-        color: "#000"
-    }
-    const dark = {
-        bg: "#1A1A1A",
-        color: "#fff"
+    const Theme = {
+        light: {
+            bg: "#FFF",
+            color: '#000'
+        },
+        dark: {
+            bg: "#1A1A1A",
+            color: "#fff"
+        }
     }
     return (    
         <AppContext.Provider value={{
@@ -36,8 +38,7 @@ function ContextProvider({ children }) {
             checkOut,
             theme,
             switchTheme,
-            light,
-            dark
+            Theme
         }} >
             {children}
         </AppContext.Provider>

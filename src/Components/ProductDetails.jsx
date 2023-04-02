@@ -30,7 +30,7 @@ function ProductDetails() {
                                 return <img
                                     onClick={() => setImgs(img)}
                                     className="rounded mt-3"
-                                    style={{width: "70px"}}
+                                    style={{width: "70px", marginRight: "5px", cursor: "pointer"}}
                                     src={img}
                                     alt=''
                                     key={Math.random() * 4} />

@@ -4,7 +4,7 @@ import "./style.css";
 
 function Slide() {
     return (
-        <div className="slide">
+        <div className="slide overflow-hidden">
             <div className="container">
                 <h1>creating custom interiors</h1>
                 <h5>we have been designing amazingly cozy interiors since 2000</h5>
