@@ -11,7 +11,7 @@ function Slide() {
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, a accusamus dignissimos vero amet ut tenetur ratione beatae ex assumenda numquam at repudiandae, cupiditate voluptate totam aut odit placeat ipsum.
                 </p>
-                <Button link='Product' value='EXPLORE STORE'/>
+                <Button link='/Product' value='EXPLORE STORE'/>
             </div>
         </div>
     )

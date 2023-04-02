@@ -15,7 +15,6 @@ import { AppContext } from './context/createContext';
 
 function App() {
   const { theme, Theme } = useContext(AppContext);
-  console.log(Theme[`${theme}`])
   return (
     <div className={`App ${theme}`} style={{color: Theme[`${theme}`]['color'], backgroundColor: Theme[`${theme}`]['bg'], transition: "all 1s ease"}}>
       <Router>

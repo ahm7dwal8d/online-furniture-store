@@ -23,8 +23,8 @@ function Product(props) {
                         <ProductHead head={item.title} />
                         <span className="opacity-50">{item.brand}</span>
                         <ProductPrice price={item.price} discounte={item.discountPercentage} />
-                        <span className="cate">{item.category}</span>
-                        <span className="brand">{item.brand}</span>
+                        <span className="cate text-capitalize">{item.category}</span>
+                        <span className="brand text-capitalize">{item.brand}</span>
                         <div className="product-footer d-flex justify-content-between align-items-center">
             <div className="info d-flex align-items-center">
                 <FontAwesomeIcon

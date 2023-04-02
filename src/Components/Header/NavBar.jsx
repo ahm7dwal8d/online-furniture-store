@@ -40,7 +40,9 @@ function NavBar() {
                 </div>
             </div>
             {state && (
-                <div className="mobile-links">
+                <div
+                    className="mobile-links"
+                    onClick={() => setState(false)}>
                     <div
                         className="close-btn"
                         onClick={() => setState(false)}>x</div>

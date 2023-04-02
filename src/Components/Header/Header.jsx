@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 
 function Header() {
     return (
-        <div className="header">
+        <div className="header overflow-hidden">
             <TopHeader />
             <HeaderInfo />
             <NavBar />

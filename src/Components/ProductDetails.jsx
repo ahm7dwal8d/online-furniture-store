@@ -21,7 +21,7 @@ function ProductDetails() {
             {product !== null && (
                 <div className="product">
                     <img
-                        className="rounded w-100"
+                        className="rounded w-100 h-25"
                         src={img === null ? product.thumbnail : img }
                         alt="" />
                     <div className="img">
@@ -48,7 +48,7 @@ function ProductDetails() {
                     </div>
                     <Link
                         to='/Product'
-                        className="text-capitalize">redirect to products page</Link>
+                        className="text-capitalize mt-2 d-inline-block">redirect to products page</Link>
                 </div>
             )}
         </div>

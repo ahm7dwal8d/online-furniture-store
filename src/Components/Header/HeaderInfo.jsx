@@ -1,21 +1,24 @@
+import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChair, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { AppContext } from "../../context/createContext";
 
 function HeaderInfo() {
+    const { theme, Theme } = useContext(AppContext);
     return (
         <div className="header-info">
         <div className="container">
             <div className="logo">
-                <a href="#">
+                <Link to='/'>
                     <FontAwesomeIcon 
                         icon={faChair}>
                         </FontAwesomeIcon>
                     <div className="info">
-                        <h6>Relaxo</h6>
-                        <p>online Furniture store</p>
+                        <h6 style={{color: Theme[`${theme}`]['color']}}>Relaxo</h6>
+                        <p style={{color: Theme[`${theme}`]['color']}}>online Furniture store</p>
                     </div>
-                </a>
+                </Link>
             </div>
             <div className="header-contact">
                 <FontAwesomeIcon

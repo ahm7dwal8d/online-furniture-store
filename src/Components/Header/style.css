@@ -18,7 +18,7 @@
 }
 @media screen and (max-width: 540px) {
     .top-header .container .location {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 .header .login,
@@ -40,6 +40,9 @@
     padding: 20px;
     border-radius: 4px;
     width: calc(100% - 40%)
+}
+.header .header-info .contact-info p {
+    margin: 0;
 }
 @media screen and (max-width: 540px) {
     .header .header-info .contact-info h5 {
@@ -177,7 +180,7 @@
     font-size: 16px;
 }
 .header .navbar {
-    padding: 10px;
+    padding: 14px;
     background-color: #772727;
 }
 .header .navbar .container {
@@ -265,7 +268,7 @@
     top: 0;
     left: 0;
     background: #fff;
-    height: 90vh;
+    height: 98vh;
     width: 250px;
     padding: 10px;
 }
