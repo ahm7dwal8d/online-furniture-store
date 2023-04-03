@@ -22,7 +22,7 @@ function ProductDetails() {
             {product !== null && (
                 <div className="product">
                     <img
-                        className="rounded w-100 h-25"
+                        className="rounded w-lg-50 w-md-100 w-sm-100 h-25"
                         src={img === null ? product.thumbnail : img }
                         alt="" />
                     <div className="img">
