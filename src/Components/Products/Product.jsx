@@ -23,15 +23,16 @@ function Product(props) {
                         <ProductHead head={item.title} />
                         <span className="opacity-50">{item.brand}</span>
                         <ProductPrice price={item.price} discounte={item.discountPercentage} />
-                        <span className="cate text-capitalize">{item.category}</span>
-                        <span className="brand text-capitalize">{item.brand}</span>
+                        <span className="cate text-capitalize" style={{fontSize: '14px'}}>{item.category}</span>
+                        <span className="brand text-capitalize" style={{fontSize: '14px'}}>{item.brand}</span>
                         <div className="product-footer d-flex justify-content-between align-items-center">
             <div className="info d-flex align-items-center">
                 <FontAwesomeIcon
                     icon={faTruckFast}
                     style={{ marginRight: "8px", fontSize: "25px" }} />
                 <p
-                    className="m-0 text-capitalize"
+                                    className="m-0 text-capitalize"
+                                    style={{fontSize: '15px'}}
                 >ships in 4 days
                 </p>
                             </div>
