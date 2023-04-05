@@ -22,7 +22,8 @@ function ProductDetails() {
             {product !== null && (
                 <div className="product">
                     <img
-                        className="rounded w-lg-50 w-md-70 w-sm-70 h-25"
+                        className="rounded h-25"
+                        style={{width: '100%'}}
                         src={img === null ? product.thumbnail : img }
                         alt="" />
                     <div className="img">
@@ -37,6 +38,7 @@ function ProductDetails() {
                                     key={Math.random() * 4} />
                             })
                         )}
+                        </div>
                         <div className="info mt-3">
                             <h5>{product.title}</h5>
                             <h6 className="opacity-50">{product.category} &  {product.brand}</h6>
@@ -47,10 +49,9 @@ function ProductDetails() {
                             onClick={() => addToCart(product)}
                             className="btn btn-primary text-capitalize"
                         >addToCart</button>
-                    </div>
                     <Link
                         to='/Product'
-                        className="text-capitalize mt-2 d-inline-block">redirect to products page</Link>
+                        className="text-capitalize mt-2 d-block">redirect to products page</Link>
                 </div>
             )}
         </div>

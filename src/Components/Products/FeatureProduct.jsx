@@ -34,7 +34,8 @@ function FeatureProduct() {
                                 <div className="btn">
                                     <button
                                         className="cart"
-                                        onClick={() => addToCart(item)}>add to cart</button>
+                                        onClick={() => addToCart(item)}
+                                    >add to cart</button>
                                     <span className="product-price">
                                         <FontAwesomeIcon
                                             icon={faCartShopping} />
@@ -46,7 +47,7 @@ function FeatureProduct() {
                     })}
                 </div>
             </div>
-            <Button value='view all' link='Product' width='20px auto'/>
+            <Button value='view all' link='Product' width='20px auto' />
         </div>
     )
 }
