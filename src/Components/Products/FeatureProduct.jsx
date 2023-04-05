@@ -5,15 +5,15 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import Button from "../Button";
 import "./style.css"
 import { AppContext } from "../../context/createContext";
+import { Link } from "react-router-dom";
 
 function FeatureProduct() {
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        axios.get("https://fakestoreapi.com/products").then((res) => {
+        axios.get("https://fakestoreapi.com/products?limit=8").then((res) => {
             setProduct(res.data)
         })
     }, [])
-    const { addToCart } = useContext(AppContext);
     return (
         <div className="feature">
             <div className="container">
@@ -26,16 +26,20 @@ function FeatureProduct() {
                             <div className="feat-product" key={item.id}>
                                 <div className="img">
                                     <img
-                                        className="w-100"
+                                        className="w-80"
+                                        style={{width: '80%', borderRadius: '4px'}}
                                         src={item.image} alt="" />
                                 </div>
                                 <h5>{item.title}</h5>
                                 <p>{item.body}</p>
                                 <div className="btn">
-                                    <button
-                                        className="cart"
-                                        onClick={() => addToCart(item)}
-                                    >add to cart</button>
+                                    <Link
+                                        to={`/Home/${item.id}`}
+                                        className='btn text-white w-25 d-flex justify-content-center'
+                                        style={{
+                                            backgroundColor: '#772727'
+                                        }}
+                                    >Buy</Link>
                                     <span className="product-price">
                                         <FontAwesomeIcon
                                             icon={faCartShopping} />
@@ -47,7 +51,12 @@ function FeatureProduct() {
                     })}
                 </div>
             </div>
-            <Button value='view all' link='Product' width='20px auto' />
+            <Link to='Feature'
+                className="text-capitalize text-white p-2 rounded text-decoration-none mt-3 ms-auto me-auto d-block d-flex justify-content-center"
+                style={{backgroundColor: 'rgb(119, 39, 39)', width: '150px'}}
+            >
+                view all
+            </Link>
         </div>
     )
 }

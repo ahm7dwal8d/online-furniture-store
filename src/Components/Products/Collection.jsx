@@ -10,7 +10,7 @@ function Collection() {
     const [state, setState] = useState([]);
     const [sliderIndex, setSliderIndex] = useState(0);
     useEffect(() => {
-        axios.get("https://fakestoreapi.com/products").then((res) => {
+        axios.get("https://fakestoreapi.com/products?limit=10").then((res) => {
             setState(res.data)
         })
     }, [])

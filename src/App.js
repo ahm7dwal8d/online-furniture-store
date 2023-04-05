@@ -11,6 +11,8 @@ import CopyRight from './Components/CopyRight/CopyRight';
 import ScrollButton from './Components/ScrollBtn';
 import NotFound from './Components/NotFound';
 import ProductDetails from './Components/ProductDetails';
+import HomeProduct from "./Components/HomeProduct"
+import FeaturePage from './Pages/Feature';
 import { AppContext } from './context/createContext';
 
 function App() {
@@ -23,7 +25,9 @@ function App() {
           <Route path='/' element={<Index />} />
           <Route path='About' element={<About />} />
           <Route path='Product' element={<Product />} />
-            <Route path='Product/:id' element={<ProductDetails />} />
+          <Route path='Feature' element={<FeaturePage />} />
+          <Route path='Product/:id' element={<ProductDetails />} />
+          <Route path='Home/:id' element={<HomeProduct />} />
           <Route path='CartPage' element={<CartPage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
