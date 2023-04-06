@@ -8,7 +8,7 @@ function FeatList(props) {
             className="pe-2 text-capitalize"
             onClick={() => fliter(list)}
             style={{listStyle: 'none', cursor: 'pointer'}}
-        >{list}</li>
+        >{list.split(" ")[0]}</li>
     )
 }
 

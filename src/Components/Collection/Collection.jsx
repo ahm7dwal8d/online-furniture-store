@@ -1,41 +1,40 @@
-import axios from "axios";
 import { useState, useEffect } from "react";
-import FeatList from "./FeatList"
-import FeatProduct from "./FeatProduct";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import CollectionProduct from "./CollectionProduct";
+import CollectionList from "./CollectionList";
 
-
-function FeatContent() {
-    const [list, setList] = useState([])
+function Collection() {
     const [product, setProduct] = useState([]);
+    const [cate, setCate] = useState([])
     useEffect(() => {
-        axios.get("https://fakestoreapi.com/products/categories").then((res) => {
-            setList(res.data)
-        })
         axios.get("https://fakestoreapi.com/products").then((res) => {
             setProduct(res.data)
         })
+        axios.get("https://fakestoreapi.com/products/categories").then((res) => {
+            setCate(res.data)
+        })
     }, [])
-    const fliter = (cate) => {
+    const filter = (cate) => {
         axios.get(`https://fakestoreapi.com/products/category/${cate}`).then((res) => {
             setProduct(res.data)
         })
     }
     return (
-        <div className="feature-main mt-4">
+        <div className="collection">
             <div className="container">
                 <ul className="p-0 m-0 d-flex justify-content-center">
-                    {list?.map((li) => {
+                    {cate?.map((list) => {
                         return (
-                            <FeatList list={li} fliter={fliter} />
+                            <CollectionList list={list} filter={filter} />
                         )
                     })}
                 </ul>
-                <div className="row mt-4">
+                <div className="row">
                     {product?.map((item) => {
                         return (
-                            <div className="col-lg-3 col-md-6 col-sm-12">
-                                <FeatProduct product={item} />
+                            <div className="col-lg-3 col-md-6 col-sm-12" key={item.id}>
+                                <CollectionProduct product={item}/>
                             </div>
                         )
                     })}
@@ -51,4 +50,4 @@ function FeatContent() {
     )
 }
 
-export default FeatContent;
+export default Collection;

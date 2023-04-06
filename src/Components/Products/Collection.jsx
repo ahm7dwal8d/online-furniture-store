@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import Button from "../Button"
 import { AppContext } from "../../context/createContext";
-
+import { Link } from "react-router-dom";
 
 function Collection() {
     const [state, setState] = useState([]);
@@ -35,7 +35,7 @@ function Collection() {
                                 <FontAwesomeIcon icon={faAngleLeft} />
                             </button>
                         )}
-                        {sliderIndex < 4 && (
+                        {sliderIndex < 1 && (
                             <button
                                 className="left-btn"
                                 onClick={() => handleClick("right")}>
@@ -66,7 +66,13 @@ function Collection() {
                 </div>
                 </div>
             </div>
-                    <Button value='view all' link='Product' width='20px auto'/>
+            <Link
+                to='Collection'
+                className="text-capitalize text-white p-2 rounded text-decoration-none mt-3 ms-auto me-auto d-block d-flex justify-content-center"
+                style={{backgroundColor: 'rgb(119, 39, 39)', width: '150px'}}
+            >
+                view all
+            </Link>
         </div>
     )
 }

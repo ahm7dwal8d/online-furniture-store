@@ -13,6 +13,8 @@ import NotFound from './Components/NotFound';
 import ProductDetails from './Components/ProductDetails';
 import HomeProduct from "./Components/HomeProduct"
 import FeaturePage from './Pages/Feature';
+import CollectionPage from './Pages/CollectionPage';
+import CollectionItem from './Components/Collection/CollectionItem';
 import { AppContext } from './context/createContext';
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path='About' element={<About />} />
           <Route path='Product' element={<Product />} />
           <Route path='Feature' element={<FeaturePage />} />
+          <Route path='Collection' element={<CollectionPage />} />
+            <Route path='collection/:id' element={<CollectionItem />} />
           <Route path='Product/:id' element={<ProductDetails />} />
           <Route path='Home/:id' element={<HomeProduct />} />
           <Route path='CartPage' element={<CartPage />} />

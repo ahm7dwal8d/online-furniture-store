@@ -7,7 +7,7 @@ function FeatProduct(props) {
         <div className="item mt-4">
             <img
             src={product.image}
-            className="w-100 rounded"
+            className="w-50 rounded"
             alt=""
         />
             <div className="info mt-2">
